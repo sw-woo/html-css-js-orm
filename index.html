@@ -1,81 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>html기초 연습</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>백종원이 하사한 맛집</title>
+		<!-- <style>
+			body {
+				font-family: "Arial", sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+			}
+
+			header {
+				background-color: #333;
+				color: white;
+				text-align: center;
+				padding: 1em;
+			}
+
+			nav {
+				background-color: #444;
+				color: white;
+				padding: 1em;
+				text-align: center;
+			}
+
+			nav a {
+				color: white;
+				text-decoration: none;
+				margin: 0 1em;
+			}
+
+			section {
+				padding: 2em;
+			}
+
+			.menu-item {
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				padding: 1em;
+				margin: 1em;
+				background-color: white;
+			}
+
+			footer {
+				background-color: #333;
+				color: white;
+				text-align: center;
+				padding: 1em;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
+		</style> -->
+
+		<link href="./style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<!-- h1태그는 대주제를 나타내며 컨테츠에 대표주제 한번을 작성하는게 검색 엔진 최적화에 도움이 됩니다. 
-            h1~h6 태그는 검색엔진 최적화를 위해서 순서대로 작성해주는것을 권장한다.
-        -->
-		<h1>만나서 반갑습니다. html 세상에 오신것을 환영합니다.</h1>
-		<h2>만나서 반갑습니다. html 세상에 오신것을 환영합니다.</h2>
-		<h3>만나서 반갑습니다. html 세상에 오신것을 환영합니다.</h3>
-		<h4>만나서 반갑습니다. html 세상에 오신것을 환영합니다.</h4>
-		<h5>만나서 반갑습니다. html 세상에 오신것을 환영합니다.</h5>
-		<h6>만나서 반갑습니다. html 세상에 오신것을 환영합니다.</h6>
+		<header>
+			<h1>원오브 뎀 치킨</h1>
+		</header>
 
-		<p>---------------------------------------------</p>
+		<nav>
+			<a href="#">홈</a>
+			<a href="#">메뉴</a>
+			<a href="#">이벤트</a>
+			<a href="#">예약</a>
+			<a href="#">연락처</a>
+		</nav>
+		<section>
+			<h2>오늘의 추천 메뉴</h2>
+			<div class="menu-item">
+				<h3>스테이크 샐러드</h3>
+				<p>신선한 채소와 고기로 만든 건강한 샐러드</p>
+				<p>가격: $15.99</p>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
 
-		<!-- <p>태그는 가로전체 한문단을 다쓴다 . 올바른 <p> 태그와 <br> 태그 작성법 
-        -->
-		<p>
-			만나서 반갑습니다.<br />
-			html 세상에 오신것을 환영합니다.
-		</p>
+			<div class="menu-item">
+				<h3 id="header">토마토 파스타</h3>
+				<p>신맛 가득한 토마토 소스와 함께한 파스타</p>
+				<p>가격: $12.99</p>
+			</div>
+		</section>
 
-		<p>---------------------------------------------</p>
-
-		<!-- <a>태그는 인덱싱과 페이지이동시 많이사용한다. <a href 
-        -->
-
-		<a href="https://www.naver.com/" target="_blank"
-			>비쥬얼 스튜디오 다운로드</a
-		>
-
-		<p>---------------------------------------------</p>
-
-		<img src="./image/다운로드.jpeg" alt="아름다운사진" />
-		<br />
-		<a href="https://www.google.com/">
-			<img
-				src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-				alt="구글 주소"
-			/>
-		</a>
-
-		<p>---------------------------------------------</p>
-
-		<h2>Sample HTML Table</h2>
-
-		<table>
-			<caption>
-				Table Caption
-			</caption>
-			<thead>
-				<tr>
-					<th>Header 1</th>
-					<th>Header 2</th>
-					<th>Header 3</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Row 1, Cell 1</td>
-					<td>Row 1, Cell 2</td>
-					<td>Row 1, Cell 3</td>
-				</tr>
-				<tr>
-					<td>Row 2, Cell 1</td>
-					<td>Row 2, Cell 2</td>
-					<td>Row 2, Cell 3</td>
-				</tr>
-				<!-- Add more rows as needed -->
-				<tr>
-					<td>Row 3, Cell 1</td>
-					<td>Row 3, Cell 2</td>
-					<td>Row 3, Cell 3</td>
-				</tr>
-			</tbody>
-		</table>
+		<footer>
+			<p>&copy; 2023 우리 식당. 모든 권리 보유.</p>
+		</footer>
 	</body>
 </html>
